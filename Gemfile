@@ -43,6 +43,9 @@ group :development, :test do
   gem 'spring'
 end
 
+# User view template of slim
+gem 'slim-rails'
+
 gem 'devise'
 gem 'better_errors'
 gem 'omniauth'
