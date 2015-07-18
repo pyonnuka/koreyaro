@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
-  root 'theme#index'
+  root 'themes#index'
   resources :themes
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
