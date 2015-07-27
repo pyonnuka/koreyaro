@@ -5,6 +5,13 @@ class ThemesController < ApplicationController
 
   def create
     @theme = Theme.new(theme_params)
+    @theme.save
+    render :index
+  end
+
+  def decision
+    theme_num = rand(Theme.all.count) + 1
+    @theme = Theme.find(theme_num)
   end
 
   private
