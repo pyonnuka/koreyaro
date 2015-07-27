@@ -1,2 +1,14 @@
 .theme-list
-  テーマリスト
+  h2 テーマリスト
+  ul
+  - @themes.each do |theme|
+    li
+      = p theme.content
+      = p theme.kind
+.theme-form
+  h2 テーマ作成
+  = form_for Theme.new do |f|
+    = f.label :content, "内容"
+    = f.text_field :content
+    = f.text_field :kind
+    = f.submit "登録する"

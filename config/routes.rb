@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   root 'themes#index'
-  resources :themes
+  resources :themes do
+    collection do
+      get 'decision'
+    end
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
