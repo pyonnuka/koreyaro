@@ -1,2 +1,8 @@
 .theme-decision
-  = p @theme.content
+  - if @theme.present?
+    = @theme.content
+  - else
+    | テーマの候補がありません
+.decision
+  = link_to "更新", :title => "更新", :onclick => "location.reload();"
+  = link_to "決定", themes_path

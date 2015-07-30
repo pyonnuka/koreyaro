@@ -5,13 +5,15 @@ class ThemesController < ApplicationController
 
   def create
     @theme = Theme.new(theme_params)
+    @theme.status = 'todo'
     @theme.save
     render :index
   end
 
   def decision
-    theme_num = rand(Theme.all.count) + 1
-    @theme = Theme.find(theme_num)
+    themes = Theme.where("status = ?",'todo')
+    theme_num = rand(themes.count) + 1
+    @theme = themes[theme_num]
   end
 
   private
