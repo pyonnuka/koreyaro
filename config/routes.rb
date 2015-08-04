@@ -9,7 +9,9 @@ Rails.application.routes.draw do
   root 'themes#index'
   resources :themes do
     collection do
-      get 'decision'
+      get 'decision/:id' => 'themes#decision'
+      get 'decision_candidate'
+      get 'post_theme'
     end
   end
   # Example of regular route:
