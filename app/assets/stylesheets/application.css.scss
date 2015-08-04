@@ -1,0 +1,59 @@
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+  widht:100%;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style:none;
+}
+
+
+header {
+  margin:0;
+  height:70px;
+  width:100%;
+  background-color:#E7E7E7;
+  border-bottom:solid 1px;
+
+  div.title {
+    margin:0;
+    padding:10px 30px;
+    display:inline-block;
+    font-family:"Candara";
+    letter-spacing:5px;
+    color:black;
+    font-size:30px;
+    a:visited {
+      color:black;
+    }
+  }
+
+  div.select-action {
+    div {
+
+      margin:0;
+      display:inline-block;
+      position:absolute;
+      top:25px;
+
+      &.post {
+        right:60px;
+      }
+
+      &.decision {
+        right:150px;
+      }
+    }
+  }
+}
+
+div.contents {
+  padding:0 60px;
+}

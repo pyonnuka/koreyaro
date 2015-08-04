@@ -55,5 +55,5 @@ gem 'omniauth-twitter'
 gem 'slim-rails'
 
 # Design helper.
-gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap-sass'
+gem 'font-awesome-sass'

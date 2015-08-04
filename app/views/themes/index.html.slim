@@ -1,5 +1,4 @@
 .theme-list
-  h2 勉強会テーマの候補
   - if @themes.present?
     ul
     - @themes.each do |theme|
@@ -12,7 +11,3 @@
           p = theme.content
   - else
     | テーマの候補がないよー勉強会しようよー😩😩😩
-
-.select-action
-  p.post     = link_to "投稿する", action: :post_theme
-  p.decision = link_to "テーマを決定する", action: :decision_candidate
