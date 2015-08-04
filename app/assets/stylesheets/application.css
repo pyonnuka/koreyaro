@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+a {
+  text-decoration: none;
+}
+
+ul,li {
+  list-style:none;
+}
+
+header .title {
+    font-family:"Candara";
+    letter-spacing:5px;
+    color:black;
+    font-size:30px;
+}
+
+header .title a:visited {
+  color:black;
+}
