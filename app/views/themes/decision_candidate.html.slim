@@ -1,0 +1,11 @@
+.theme-decision
+  - if @theme.present?
+    h2 = @theme.title
+    p = @theme.kind
+    p = @theme.content
+    = form_tag("/themes/decision/#{@theme.id}", method: :get)
+      = submit_tag "決定"
+  - else
+    | テーマの候補がありません
+    = link_to "戻る", action: :index
+  = link_to "気に入らない", :onclick => "location.reload();"
