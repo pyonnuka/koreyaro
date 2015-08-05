@@ -18,3 +18,7 @@
 
 # Ignore IDE files.
 /.idea
+
+# Ignore config files.
+config/database.yml
+config/secrets.yml
