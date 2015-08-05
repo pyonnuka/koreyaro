@@ -8,9 +8,22 @@
 </head>
 <body>
 <header>
-  <p class="title"><%= link_to "Koreyaro", themes_path %></p>
+  <div class="title">
+    <%= link_to "Koreyaro", themes_path %><i class="fa fa-pencil"></i>
+  </div>
+  <div class="select-action">
+    <div class="post">
+    <%= link_to "投稿する", action: :post_theme %>
+    </div>
+    <div class="decision">
+    <%= link_to "テーマを決定する", action: :decision_candidate %>
+    </div>
+  </div>
 </header>
+
+<div class="contents">
 <%= yield %>
+</div>
 
 </body>
 </html>
