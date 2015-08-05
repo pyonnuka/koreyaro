@@ -1,10 +1,7 @@
 .theme-form
-h2 テーマ作成
-= form_for @theme do |f|
-  p = f.label :title, "タイトル"
-  p = f.text_field :title
-  p = f.label :kind, "タグ"
-  p = f.text_field :kind
-  p = f.label :content, "内容"
-  p = f.text_area :content
-  p = f.submit "登録する"
+  h2 テーマ作成
+  = form_for @theme do |f|
+    p = f.text_field :title, size: '60', placeholder: 'タイトル'
+    p = f.text_field :kind, size: '60', placeholder: 'タグ'
+    p = f.text_area :content, size: '60x10', placeholder: '内容'
+    p = f.submit "登録する"

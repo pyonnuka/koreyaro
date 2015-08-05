@@ -1,14 +1,13 @@
 .theme-list
   - if @themes.present?
-    ul
-    - @themes.each do |theme|
-      li
-        .title
-          p = theme.title
-        .kind
-          p = theme.kind
-        .content
-          p = theme.content
+    ul.themes
+      - @themes.each do |theme|
+        li.theme
+          .title
+            p = theme.title
+          .content
+            p = theme.content
+          .kind
+            p = theme.kind
   - else
     | テーマの候補がないよー勉強会しようよー😩😩😩
-

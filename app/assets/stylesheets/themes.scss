@@ -5,7 +5,33 @@
 
 
 .theme-list {
-  h2 {
+  ul.themes {
+    padding:10px;
 
+    li {
+      display:inline-block;
+      vertical-align:top;
+      width:250px;
+      height:300px;
+      margin:5px 20px;
+      padding:10px 5px;
+      border:solid 1px rgb(150,150,150);
+      border-radius:3px;
+      box-shadow:4px 4px;
+
+      .title,.content{
+        border-bottom:solid 1px rgb(200,200,200);
+      }
+      .content {
+        height:200px;
+        overflow:hidden;
+      }
+
+    }
   }
+}
+
+.theme-form {
+  width:500px;
+  margin:0 auto;
 }
